@@ -1,0 +1,31 @@
+<div id='encrypt'> 加密后: </div>
+<div id='decrypt'> 解密后: </div>
+
+<script src="rollups/aes.js" type="text/javascript"></script>
+<script src="jq.js" type="text/javascript"></script>
+<script src="rollups/md5.js" type="text/javascript"></script>
+<script src="components/pad-zeropadding-min.js" type="text/javascript"></script>
+<script>
+var json = {
+    type: '0',
+    idFromType:'13333333333',
+    uuid: '11111111111111111111111111111111',
+    token:'11111111111111111111111111111111',
+};//被加密的数据
+
+var url = "https://api.youfumama.com/v1/user/get/999?api=test";
+
+function todo(){
+	$.post(url, json, function (data) {
+	}, "json");
+}
+todo();
+
+
+
+</script>
+
+
+
+
+
